@@ -1,7 +1,7 @@
 {
-  "name": "next-join",
-  "version": "0.0.0",
-  "description": "Better join for array",
+  "name": "@feizheng/next-join",
+  "version": "1.0.0",
+  "description": "Better join for array.",
   "homepage": "https://github.com/afeiship/next-join",
   "author": {
     "name": "afei",
@@ -9,23 +9,35 @@
   },
   "scripts": {
     "build": "gulp",
-    "test": "mocha"
+    "test": "jest",
+    "version": "gulp bump",
+    "start": "node ./express.js"
   },
   "main": "dist/next-join.js",
   "license": "MIT",
   "devDependencies": {
+    "@feizheng/next-nice-comments": "^1.0.0",
+    "@feizheng/rake-git": "^1.2.0",
     "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.1.3",
+    "gulp-debug": "^4.0.0",
+    "gulp-header": "^2.0.7",
+    "gulp-ignore": "^2.0.2",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^2.1.2",
-    "yargs": "^4.7.1",
-    "mocha": "^3.5.0"
+    "jest": "^24.9.0",
+    "prettier": "^1.14.3",
+    "uglify-save-license": "^0.4.1",
+    "yargs": "^4.7.1"
   },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "@feizheng/next-js-core2": "^2.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

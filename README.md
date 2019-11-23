@@ -1,15 +1,14 @@
 # next-join
-> Better join for array
+> Better join for array.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-join --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-join
 ```
 
-## usage:
+## usage
 ```js
-var nxJoin = require('next-join');
-var arr = ['a', undefined, 'b','c'];
-nx.join(arr);
-// a,b,c
+import 'next-join';
+
+//DOCS here!
 ```
