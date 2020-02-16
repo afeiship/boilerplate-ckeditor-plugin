@@ -1,8 +1,8 @@
 /*!
  * name: @feizheng/next-join
  * url: https://github.com/afeiship/next-join
- * version: 1.0.0
- * date: 2019-11-23T07:33:51.037Z
+ * version: 1.0.2
+ * date: 2020-02-16T17:39:39.834Z
  * license: MIT
  */
 
@@ -11,11 +11,7 @@
   var nx = global.nx || require('@feizheng/next-js-core2');
 
   nx.join = function(inArray, inSep) {
-    return inArray
-      .filter(function(item) {
-        return !!item;
-      })
-      .join(inSep);
+    return inArray.filter(Boolean).join(inSep);
   };
 
   if (typeof module !== 'undefined' && module.exports) {

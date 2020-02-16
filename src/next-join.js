@@ -3,11 +3,7 @@
   var nx = global.nx || require('@feizheng/next-js-core2');
 
   nx.join = function(inArray, inSep) {
-    return inArray
-      .filter(function(item) {
-        return !!item;
-      })
-      .join(inSep);
+    return inArray.filter(Boolean).join(inSep);
   };
 
   if (typeof module !== 'undefined' && module.exports) {
