@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>CKEditor 5 Framework – Implementing a simple widget</title>
-  </head>
-  <body>
-    <div id="editor">
-      <p>Editor content goes here.</p>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>CKEditor 5 Framework – Implementing a simple widget</title>
+  <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+<div id='editor'>
+  <p>Editor content goes here.</p>
+  <section class="simple-box">
+    <h1 class="simple-box-title">Box title</h1>
+    <div class="simple-box-description">
+      <p>The description goes here.</p>
+      <ul>
+        <li>It can contain lists,</li>
+        <li>and other block elements like headings.</li>
+      </ul>
     </div>
-    <script src="../dist/bundle.js"></script>
-  </body>
+  </section>
+</div>
+<script src='../dist/bundle.js'></script>
+</body>
 </html>
