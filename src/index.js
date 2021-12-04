@@ -3,7 +3,7 @@ import View from './components/view';
 import Editing from './components/editing';
 
 export default class extends Plugin {
-  static get requires() {
+  static get requires () {
     return [Editing, View];
   }
 }

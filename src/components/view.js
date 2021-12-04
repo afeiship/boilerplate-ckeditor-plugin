@@ -6,7 +6,7 @@ export default class extends Plugin {
     console.log('SimpleBoxUI#init() got called');
     this._defineToolbar();
     this._defineSchema(); // ADDED
-    this._defineConverters();
+    // this._defineConverters();
   }
 
   _defineToolbar() {
@@ -31,7 +31,7 @@ export default class extends Plugin {
       });
 
       // Bind the state of the button to the command.
-      buttonView.bind('isOn', 'isEnabled').to(command, 'value', 'isEnabled');
+      // buttonView.bind('isOn', 'isEnabled').to(command, 'value', 'isEnabled');
 
       // Execute the command when the button is clicked (executed).
       this.listenTo(buttonView, 'execute', () => editor.execute('insertSimpleBox'));
